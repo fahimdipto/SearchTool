@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -40,6 +41,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
                 finish();
+                Toast.makeText(getApplicationContext(),"redirecting",Toast.LENGTH_SHORT).show();
             }
         });
     }

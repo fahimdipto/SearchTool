@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button bt;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("Value",st);
                 startActivity(i);
                 finish();
-
+                Toast.makeText(getApplicationContext(),"Awaiting Confirmation",Toast.LENGTH_SHORT).show();
             }
         });
     }
